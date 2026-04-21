@@ -4,6 +4,8 @@ export type OptionItem = {
   description?: string;
 };
 
+import type { StoryFormValues } from "@/lib/story/schema";
+
 export type StoryFieldKey =
   | "era"
   | "region"
@@ -150,4 +152,4 @@ export const DEFAULT_STORY_FORM = {
   protagonistName: "",
   keyword: "",
   length: 1200,
-};
+} satisfies StoryFormValues;

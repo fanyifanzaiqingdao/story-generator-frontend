@@ -70,7 +70,7 @@ export default function StoryGeneratorForm() {
   }, [values]);
 
   const updateField = <K extends keyof StoryFormValues>(field: K, value: StoryFormValues[K]) => {
-    form.setValue(field, value, { shouldValidate: true, shouldDirty: true });
+    form.setValue(field as never, value as never, { shouldValidate: true, shouldDirty: true });
   };
 
   const handleRollSingle = (field: StoryFieldKey) => {
