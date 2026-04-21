@@ -135,7 +135,7 @@ export const DICE_ENABLED_FIELDS: StoryFieldKey[] = [
   "ending",
 ];
 
-export const DEFAULT_STORY_FORM = {
+export const DEFAULT_STORY_FORM: StoryFormValues = {
   era: "fantasy_era",
   region: "mixed_fantasy",
   gender: "auto",
@@ -152,4 +152,4 @@ export const DEFAULT_STORY_FORM = {
   protagonistName: "",
   keyword: "",
   length: 1200,
-} satisfies StoryFormValues;
+};
